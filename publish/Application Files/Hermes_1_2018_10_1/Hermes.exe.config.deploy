@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Hermes.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+      <section name="Hermes_UserControls.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  </configSections>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.2" />
+  </startup>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_IHermesRoutesService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:20:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="2147483647" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="2147483647" maxArrayLength="16384" maxBytesPerRead="2147483647" maxNameTableCharCount="16384" />
+        </binding>
+        <binding name="BasicHttpBinding_IFileTransferService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="524288" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+        </binding>
+        <binding name="BasicHttpBinding_IHermesGpxDataService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="524288" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="2147483647" maxArrayLength="16384" maxBytesPerRead="2147483647" maxNameTableCharCount="16384" />
+        </binding>
+        <binding name="BasicHttpBinding_IHermesMktReader" closeTimeout="00:05:00" openTimeout="00:30:00" receiveTimeout="00:30:00" sendTimeout="00:30:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="2147483647" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="2147483647" maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxNameTableCharCount="2147483647" />
+        </binding>
+        <binding name="BasicHttpBinding_IJsonPoints" closeTimeout="00:10:00" openTimeout="00:10:00" receiveTimeout="00:15:00" sendTimeout="00:15:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="2147483647" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="2147483647" maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxNameTableCharCount="2147483647" />
+        </binding>
+        <binding name="BasicHttpBinding_IDistributorDataService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="2147483647" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="2147483647" maxStringContentLength="2147483647" maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxNameTableCharCount="2147483647" />
+        </binding>
+        <binding name="BasicHttpBinding_IDicShopService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="524288" maxBufferSize="65536" maxReceivedMessageSize="65536" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+        </binding>
+        <binding name="BasicHttpBinding_ISalesAgentsRoutes" closeTimeout="00:01:00" openTimeout="00:10:00" receiveTimeout="00:10:00" sendTimeout="00:10:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="2147483647" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="2147483647" maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxNameTableCharCount="2147483647" />
+        </binding>
+        <binding name="BasicHttpBinding_IAgentsPoints" closeTimeout="00:01:00" openTimeout="00:10:00" receiveTimeout="00:10:00" sendTimeout="00:10:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="2147483647" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="2147483647" maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxNameTableCharCount="2147483647" />
+        </binding>
+        <binding name="BasicHttpBinding_IHermesUserPassport" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="524288" maxBufferSize="65536" maxReceivedMessageSize="65536" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+          <security mode="None">
+            <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
+            <message clientCredentialType="UserName" algorithmSuite="Default" />
+          </security>
+        </binding>
+        <binding name="BasicHttpBinding_IDistributorApiService" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="524288" maxBufferSize="65536" maxReceivedMessageSize="65536" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true" messageEncoding="Text">
+          <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+          <security mode="None">
+            <transport clientCredentialType="None" proxyCredentialType="None" realm="" />
+            <message clientCredentialType="UserName" algorithmSuite="Default" />
+          </security>
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://localhost:8086/" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IHermesMktReader" contract="gpsDevicesReader.IHermesMktReader" name="BasicHttpBinding_IHermesMktReader" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IDicShopService" contract="DicShopServiceReference.IDicShopService" name="BasicHttpBindingIDicShopService" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IJsonPoints" contract="JsonTrackPointsRef.IJsonPoints" name="BasicHttpBinding_IJsonPoints" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IDistributorDataService" contract="DistributorDataRef.IDistributorDataService" name="BasicHttpBinding_IDistributorDataService" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IHermesRoutesService" contract="HermesRouteServiceReference.IHermesRoutesService" name="BasicHttpBinding_IHermesRoutesService" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileTransferService" contract="gpxSoapTransfer.IFileTransferService" name="BasicHttpBinding_IFileTransferService" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ISalesAgentsRoutes" contract="AgentsRoute.ISalesAgentsRoutes" name="BasicHttpBinding_ISalesAgentsRoutes" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IHermesUserPassport" contract="UserPassport.IHermesUserPassport" name="BasicHttpBinding_IHermesUserPassport" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ISalesAgentsRoutes" contract="routes.ISalesAgentsRoutes" name="BasicHttpBinding_ISalesAgentsRoutes" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IAgentsPoints" contract="AgentsPoints.IAgentsPoints" name="BasicHttpBinding_IAgentsPoints" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IHermesGpxDataService" contract="hermesDataServices.IHermesGpxDataService" name="BasicHttpBinding_IHermesGpxDataService" />
+      <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IDistributorApiService" contract="api.IDistributorApiService" name="BasicHttpBinding_IDistributorApiService" />
+    </client>
+  </system.serviceModel>
+  <system.web>
+    <compilation debug="true" />
+  </system.web>
+  <userSettings>
+    <Hermes.Properties.Settings>
+      <setting name="latitude" serializeAs="String">
+        <value>48.43</value>
+      </setting>
+      <setting name="longtitude" serializeAs="String">
+        <value>37.33</value>
+      </setting>
+      <setting name="last_login" serializeAs="String">
+        <value>developers</value>
+      </setting>
+      <setting name="last_database" serializeAs="String">
+        <value>1</value>
+      </setting>
+      <setting name="connections" serializeAs="String">
+        <value>{"Караван-сарай":"http://193.242.159.206:8089/Hermes.UserPassport/HermesUserPassport.svc"}</value>
+      </setting>
+    </Hermes.Properties.Settings>
+    <Hermes_UserControls.Properties.Settings>
+      <setting name="last_login" serializeAs="String">
+        <value>distrdev</value>
+      </setting>
+      <setting name="last_database" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="connections" serializeAs="String">
+        <value>{"Караван-сарай":"http://193.242.159.206:8089/Hermes.UserPassport/HermesUserPassport.svc"}</value>
+      </setting>
+    </Hermes_UserControls.Properties.Settings>
+  </userSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Devart.Data.Linq" publicKeyToken="09AF7300EEC23701" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.0.4.0" newVersion="3.0.4.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Data.SQLite" publicKeyToken="db937bc2d44ff139" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.0.108.0" newVersion="1.0.108.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.Http" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.1.2" newVersion="4.1.1.2" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Windows.Interactivity" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.5.0.0" newVersion="4.5.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Unity.Abstractions" publicKeyToken="6d32ff45e0ccc69f" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.3.1.0" newVersion="3.3.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
+      <parameters>
+        <parameter value="v13.0" />
+      </parameters>
+    </defaultConnectionFactory>
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+      <provider invariantName="System.Data.SQLite.EF6" type="System.Data.SQLite.EF6.SQLiteProviderServices, System.Data.SQLite.EF6" />
+    </providers>
+  </entityFramework>
+  <appSettings>
+    <add key="seq" value="http://192.168.1.150:5341" />
+    <add key="logfile" value="app.hermes.log" />
+    <add key="api" value="http://193.242.159.206:8089/hermes.holux.protocol/api/gpx" />
+  </appSettings>
+  <system.data>
+    <DbProviderFactories>
+      <remove invariant="System.Data.SQLite.EF6" />
+      <add name="SQLite Data Provider (Entity Framework 6)" invariant="System.Data.SQLite.EF6" description=".NET Framework Data Provider for SQLite (Entity Framework 6)" type="System.Data.SQLite.EF6.SQLiteProviderFactory, System.Data.SQLite.EF6" />
+      <remove invariant="System.Data.SQLite" />
+      <add name="SQLite Data Provider" invariant="System.Data.SQLite" description=".NET Framework Data Provider for SQLite" type="System.Data.SQLite.SQLiteFactory, System.Data.SQLite" />
+    </DbProviderFactories>
+  </system.data>
+</configuration>
